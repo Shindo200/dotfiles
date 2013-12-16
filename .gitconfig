@@ -1,3 +1,6 @@
 [user]
-	name = Suguru Odai
-	email = ourqwers@gmail.com
+  name = Suguru Odai
+  email = ourqwers@gmail.com
+[alias]
+  st = status
+  loggr = log --oneline --graph
