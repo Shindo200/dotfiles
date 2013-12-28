@@ -52,3 +52,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Added by the rbenv and setup
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Added by the PHP5.5
+export PATH=/usr/local/php5/bin:$PATH
