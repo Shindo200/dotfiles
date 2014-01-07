@@ -4,3 +4,5 @@
 [alias]
   st = status
   loggr = log --oneline --graph
+[color]
+  ui = true
