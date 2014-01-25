@@ -4,5 +4,8 @@
 [alias]
   st = status
   loggr = log --oneline --graph
+  co = checkout
 [color]
   ui = true
+[push]
+  default = matching
