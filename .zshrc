@@ -45,6 +45,7 @@ alias irb='pry'
 alias javac='javac -encoding utf-8'
 alias java='java -Dfile.encoding=utf-8'
 alias lsusb='system_profiler SPUSBDataType'
+alias bundle='bundle-first_commit'
 
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
