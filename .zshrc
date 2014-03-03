@@ -13,6 +13,9 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 # コアダンプサイズを制限
 limit coredumpsize 102400
 
+# Set default editor
+export EDITOR=/usr/bin/vim
+
 # Set shell options
 unsetopt promptcr
 setopt prompt_subst
