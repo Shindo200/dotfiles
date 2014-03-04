@@ -37,7 +37,7 @@ setopt auto_cd
 setopt auto_param_keys
 setopt auto_param_slash
 
-PROMPT='[%n@%m %.]$ '
+PROMPT='%F{green}[%n@%m %.]%f$ '
 
 # User specific aliases and functions
 alias deldsfile="find . -name \".DS_Store\" -exec rm -f {} \;"
