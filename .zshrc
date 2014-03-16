@@ -59,3 +59,6 @@ eval "$(rbenv init -)"
 
 # Added by the PHP5.5
 export PATH=/usr/local/php5/bin:$PATH
+
+# Added nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
