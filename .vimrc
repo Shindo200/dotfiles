@@ -39,7 +39,7 @@ set helpfile=$VIMRUNTIME/doc/help.txt
 filetype plugin on
 
 " バックスペースを有効にする
-" set backspace=indent,eol,start
+set backspace=indent,eol,start
 
 "---------------------------------
 " ステータスライン
