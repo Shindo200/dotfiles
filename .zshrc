@@ -48,7 +48,6 @@ alias irb='pry'
 alias javac='javac -encoding utf-8'
 alias java='java -Dfile.encoding=utf-8'
 alias lsusb='system_profiler SPUSBDataType'
-alias bundle='bundler-first_commit'
 alias node='node --harmony'
 
 # Added by the Heroku Toolbelt
