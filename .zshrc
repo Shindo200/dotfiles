@@ -51,6 +51,9 @@ alias lsusb='system_profiler SPUSBDataType'
 alias node='node --harmony'
 alias be='bundle exec'
 
+# Key bind
+bindkey -e
+
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
