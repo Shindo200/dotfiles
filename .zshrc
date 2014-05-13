@@ -68,3 +68,18 @@ export PATH=/usr/local/php5/bin:$PATH
 
 # Added nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# Sho GIT Branch
+autoload -Uz vcs_info
+
+# %b branch
+# %a action
+zstyle ':vcs_info:*' formats '[%b]'
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+precmd () {
+    psvar=()
+    LANG=en_US.UTF-8 vcs_info
+    [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+}
+
+RPROMPT+="%1(v|%F{green}%1v%f|)"
