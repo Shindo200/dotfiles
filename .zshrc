@@ -67,6 +67,12 @@ setopt auto_cd
 setopt auto_param_keys
 setopt auto_param_slash
 
+#-------------
+# Disable key
+#-------------
+# r コマンド（履歴実行）を無効化
+disable r
+
 #-----------------------
 # User specific aliases
 #-----------------------
@@ -74,6 +80,7 @@ alias vi='vim'
 alias g='git'
 alias irb='pry'
 alias be='bundle exec'
+alias r='rails'
 # JAVA で UTF-8 を利用
 alias javac='javac -encoding utf-8'
 alias java='java -Dfile.encoding=utf-8'
