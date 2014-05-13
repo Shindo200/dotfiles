@@ -70,8 +70,8 @@ autoload -Uz vcs_info
 
 # %b branch
 # %a action
-zstyle ':vcs_info:*' formats '[%b]'
-zstyle ':vcs_info:*' actionformats '[%b|%a]'
+zstyle ':vcs_info:*' formats '(%b)'
+zstyle ':vcs_info:*' actionformats '(%b|%a)'
 precmd () {
     psvar=()
     LANG=en_US.UTF-8 vcs_info
@@ -79,5 +79,6 @@ precmd () {
 }
 
 # PROMPT
-PROMPT='%F{green}[%n@%m %.]%f$ '
-RPROMPT="%1(v|%F{green}%1v%f|)[%*]"
+PROMPT="%B%(?,%F{083},%F{205})[%n@%m: %.]%f%b %1(v|%B%F{045}%1v%f%b|)
+%B%(!,#,$)%b "
+RPROMPT="%B%F{220}<%*>%f%b"
