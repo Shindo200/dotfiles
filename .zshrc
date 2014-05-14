@@ -105,6 +105,12 @@ alias lsusb='system_profiler SPUSBDataType'
 #
 bindkey -e
 
+#-------
+# Path
+#-------
+# アーキテクチュアに依存したデータを置くディレクトリ
+export PATH=/usr/local/share:$PATH
+
 #-----------------
 # Heroku Toolbelt
 #-----------------
