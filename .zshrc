@@ -114,6 +114,12 @@ bindkey -e
 # アーキテクチュアに依存したデータを置くディレクトリ
 export PATH=/usr/local/share:$PATH
 
+#-----
+# Git
+#-----
+export PATH=/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH
+export PATH=/usr/local/opt/git/share/git-core/contrib/git-jump:$PATH
+
 #-----------------
 # Heroku Toolbelt
 #-----------------
