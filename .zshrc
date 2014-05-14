@@ -90,6 +90,9 @@ alias node='node --harmony'
 alias rmds="find . -name \".DS_Store\" -exec rm -f {} \;"
 # USB でバイスを表示する
 alias lsusb='system_profiler SPUSBDataType'
+# PullRequest ブランチに checkout する
+# http://qiita.com/yuku_t/items/f53a9d3ea92614b0927d
+alias prcheckout='prfetch | percol | cut -f2 | xargs git checkout'
 
 #----------
 # Key bind
