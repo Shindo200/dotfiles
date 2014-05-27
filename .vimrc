@@ -202,17 +202,11 @@ let g:syntastic_ruby_checkers = ['rubocop']
 "---------------------------------
 " NERD_commenter.vim
 "---------------------------------
+NeoBundle 'scrooloose/nerdcommenter'
 " コメントの間にスペースを空ける
 let NERDSpaceDelims=1
 " 未対応ファイルタイプのエラーメッセージを表示しない
 let NERDShutUp=1
-
-"---------------------------------
-" rsense.vim
-"---------------------------------
-" Rubyのomni保管を設定
-let g:rsenseHome = "/usr/lib/rsense-0.3"
-" let g:rsenseUseOmniFunc = 1
 
 "---------------------------------
 " neocomplcache.vim
