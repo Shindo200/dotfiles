@@ -187,7 +187,6 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'VimClojure'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle "Shougo/neosnippet-snippets"
 NeoBundle 'jpalardy/vim-slime'
@@ -222,6 +221,7 @@ let g:rsenseHome = "/usr/lib/rsense-0.3"
 "---------------------------------
 " neocomplcache.vim
 "---------------------------------
+NeoBundle 'Shougo/neocomplcache'
 " let g:neocomplcache_enable_at_startup = 1
 
 "---------------------------------
