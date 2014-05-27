@@ -217,6 +217,7 @@ NeoBundle 'Shougo/neocomplcache'
 "---------------------------------
 " NERDTree.vim
 "---------------------------------
+NeoBundle 'scrooloose/nerdtree'
 " 作業ウィンドウにカーソルを合わせる
 "  autocmd vimenter * if argc() | NERDTree | wincmd p | endif
 " 最後のウィンドウを閉じたときにNERDTreeも閉じる
