@@ -173,26 +173,6 @@ set expandtab
 "---------------------------------
 
 "---------------------------------
-" NERD_commenter.vim
-"---------------------------------
-" コメントの間にスペースを空ける
-let NERDSpaceDelims=1
-" 未対応ファイルタイプのエラーメッセージを表示しない
-let NERDShutUp=1
-
-"---------------------------------
-" rsense.vim
-"---------------------------------
-" Rubyのomni保管を設定
-let g:rsenseHome = "/usr/lib/rsense-0.3"
-" let g:rsenseUseOmniFunc = 1
-
-"---------------------------------
-" neocomplcache.vim
-"---------------------------------
-" let g:neocomplcache_enable_at_startup = 1
-
-"---------------------------------
 " NeoBundle
 "---------------------------------
 set nocompatible
@@ -216,6 +196,26 @@ NeoBundle 'scrooloose/syntastic'
 filetype plugin indent on     " required!
 filetype indent on
 syntax on
+
+"---------------------------------
+" NERD_commenter.vim
+"---------------------------------
+" コメントの間にスペースを空ける
+let NERDSpaceDelims=1
+" 未対応ファイルタイプのエラーメッセージを表示しない
+let NERDShutUp=1
+
+"---------------------------------
+" rsense.vim
+"---------------------------------
+" Rubyのomni保管を設定
+let g:rsenseHome = "/usr/lib/rsense-0.3"
+" let g:rsenseUseOmniFunc = 1
+
+"---------------------------------
+" neocomplcache.vim
+"---------------------------------
+" let g:neocomplcache_enable_at_startup = 1
 
 "---------------------------------
 " NERDTree.vim
