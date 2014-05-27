@@ -191,11 +191,18 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle "Shougo/neosnippet-snippets"
 NeoBundle 'jpalardy/vim-slime'
-NeoBundle 'scrooloose/syntastic'
 
-filetype plugin indent on     " required!
+filetype plugin indent on
 filetype indent on
 syntax on
+
+"---------------------------------
+" syntasic.vim
+"---------------------------------
+NeoBundle 'scrooloose/syntastic'
+let g:syntastic_mode_map = { 'mode': 'passive',
+            \ 'active_filetypes': ['ruby'] }
+let g:syntastic_ruby_checkers = ['rubocop']
 
 "---------------------------------
 " NERD_commenter.vim
