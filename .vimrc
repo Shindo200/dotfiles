@@ -191,10 +191,6 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle "Shougo/neosnippet-snippets"
 NeoBundle 'jpalardy/vim-slime'
 
-filetype plugin indent on
-filetype indent on
-syntax on
-
 "---------------------------------
 " syntasic.vim
 "---------------------------------
@@ -236,3 +232,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let NERDTreeShowHidden=1
 " 表示しないファイル
 let NERDTreeIgnore=['\.git$', '\.DS_Store', '\~$']
+
+"---------------------------------
+" Plugin After setting
+"---------------------------------
+filetype plugin indent on
+filetype indent on
+syntax on
