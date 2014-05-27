@@ -209,6 +209,7 @@ NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
+NeoBundle "Shougo/neosnippet-snippets"
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 
@@ -222,6 +223,7 @@ syntax on
 " 作業ウィンドウにカーソルを合わせる
 "  autocmd vimenter * if argc() | NERDTree | wincmd p | endif
 " 最後のウィンドウを閉じたときにNERDTreeも閉じる
+"
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " 隠しファイルを表示するか
 let NERDTreeShowHidden=1
