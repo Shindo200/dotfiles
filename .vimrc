@@ -28,6 +28,8 @@ set showmode
 setlocal omnifunc=syntaxcomplete#Complete
 " Ctrl+Fでomni補完
 imap <Nul> <C-x><C-o>
+" クリップボードを利用する
+set clipboard+=unnamed
 
 " pathogenでftdetectなどをloadさせるために一度ファイルタイプ判定をoff
 filetype off
