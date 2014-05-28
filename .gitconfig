@@ -2,10 +2,12 @@
   name = Suguru Odai
   email = ourqwers@gmail.com
 [alias]
+  adp = add -p
   st = status
   lg = log --oneline --graph --decorate
   lga = log --oneline --graph --decorate --all
   co = checkout
+  rb = rebase
 [color]
   ui = true
 [push]
