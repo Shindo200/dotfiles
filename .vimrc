@@ -196,6 +196,7 @@ NeoBundle 'jpalardy/vim-slime'
 "---------------------------------
 " syntasic.vim
 "---------------------------------
+" ruby のファイルを保存したときに rubocop を動かす
 NeoBundle 'scrooloose/syntastic'
 let g:syntastic_mode_map = { 'mode': 'passive',
             \ 'active_filetypes': ['ruby'] }
