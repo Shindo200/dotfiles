@@ -3,14 +3,14 @@
   email = ourqwers@gmail.com
 [alias]
   adp = add -p
-  st = status
-  lg = log --oneline --graph --decorate
-  lga = log --oneline --graph --decorate --all
   co = checkout
   cm = commit
-  rb = rebase
   df = diff
   dfh = diff HEAD
+  lg = log --oneline --graph --decorate
+  lga = log --oneline --graph --decorate --all
+  rb = rebase
+  st = status
 [color]
   ui = true
 [push]
