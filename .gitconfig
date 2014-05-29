@@ -8,6 +8,8 @@
   lga = log --oneline --graph --decorate --all
   co = checkout
   rb = rebase
+  df = diff
+  dfh = diff HEAD
 [color]
   ui = true
 [push]
