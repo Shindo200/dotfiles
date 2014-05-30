@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'method_source'
+gem 'pry'
+gem 'pry-doc'
+gem 'rdoc'
+gem 'redcarpet'
+gem 'rubocop'
+gem 'spring'
+gem 'spring-commands-rspec'
+gem 'what_methods'
