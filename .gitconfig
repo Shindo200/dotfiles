@@ -1,6 +1,7 @@
 [user]
   name = Suguru Odai
   email = ourqwers@gmail.com
+
 [alias]
   adp = add -p
   co = checkout
@@ -11,10 +12,13 @@
   lga = log --oneline --graph --decorate --all
   rb = rebase
   st = status
+
 [color]
   ui = true
+
 [push]
   default = matching
+
 [pager]
   log  = diff-highlight | less
   show = diff-highlight | less
