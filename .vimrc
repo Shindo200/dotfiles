@@ -31,15 +31,6 @@ imap <Nul> <C-x><C-o>
 " クリップボードを利用する
 set clipboard+=unnamed
 
-" pathogenでftdetectなどをloadさせるために一度ファイルタイプ判定をoff
-filetype off
-" pathogen.vimによってbundle配下のpluginをpathに加える
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-set helpfile=$VIMRUNTIME/doc/help.txt
-" ファイルタイプ判定をon
-filetype plugin on
-
 " バックスペースを有効にする
 set backspace=indent,eol,start
 
