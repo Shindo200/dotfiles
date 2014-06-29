@@ -203,19 +203,10 @@ let g:vim_tags_gems_tags_command = "/usr/local/Cellar/ctags/5.8/bin/ctags -R -f 
 set tags+=tags,Gemfile.lock.tags
 
 "---------------------------------
-" NERD_commenter.vim
-"---------------------------------
-NeoBundle 'scrooloose/nerdcommenter'
-" コメントの間にスペースを空ける
-let NERDSpaceDelims=1
-" 未対応ファイルタイプのエラーメッセージを表示しない
-let NERDShutUp=1
-
-"---------------------------------
 " neocomplcache.vim
 "---------------------------------
 NeoBundle 'Shougo/neocomplcache'
-" let g:neocomplcache_enable_at_startup = 1
+"let g:neocomplcache_enable_at_startup = 1
 
 "---------------------------------
 " NERDTree.vim
