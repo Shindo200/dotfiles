@@ -195,6 +195,14 @@ let g:syntastic_mode_map = { 'mode': 'passive',
 let g:syntastic_ruby_checkers = ['rubocop']
 
 "---------------------------------
+" vim-tags
+"---------------------------------
+NeoBundle 'szw/vim-tags'
+let g:vim_tags_project_tags_command = "/usr/local/Cellar/ctags/5.8/bin/ctags -f tags -R . 2>/dev/null"
+let g:vim_tags_gems_tags_command = "/usr/local/Cellar/ctags/5.8/bin/ctags -R -f Gemfile.lock.tags `bundle show --paths` 2>/dev/null"
+set tags+=tags,Gemfile.lock.tags
+
+"---------------------------------
 " NERD_commenter.vim
 "---------------------------------
 NeoBundle 'scrooloose/nerdcommenter'
