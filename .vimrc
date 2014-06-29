@@ -180,8 +180,9 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'VimClojure'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'basyura/unite-rails'
 NeoBundle 'Shougo/neosnippet'
-NeoBundle "Shougo/neosnippet-snippets"
+NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'jpalardy/vim-slime'
 
 "---------------------------------
