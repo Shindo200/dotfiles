@@ -81,7 +81,6 @@ alias g='git'
 alias irb='pry'
 alias be='bundle exec'
 alias bi='bundle install --without production --path vendor/bundle'
-alias r='rails'
 # JAVA で UTF-8 を利用
 alias javac='javac -encoding utf-8'
 alias java='java -Dfile.encoding=utf-8'
