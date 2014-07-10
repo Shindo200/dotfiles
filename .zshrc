@@ -77,6 +77,7 @@ disable r
 # User specific aliases
 #-----------------------
 alias vi='vim'
+alias peco='percol'
 alias g='git'
 alias irb='pry'
 alias be='bundle exec'
