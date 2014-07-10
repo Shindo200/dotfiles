@@ -80,6 +80,7 @@ alias vi='vim'
 alias g='git'
 alias irb='pry'
 alias be='bundle exec'
+alias bi='bundle install --without production --path vendor/bundle'
 alias r='rails'
 # JAVA で UTF-8 を利用
 alias javac='javac -encoding utf-8'
@@ -88,7 +89,7 @@ alias java='java -Dfile.encoding=utf-8'
 alias node='node --harmony'
 # 全ディレクトリの .DS_STORE を削除
 alias rmds="find . -name \".DS_Store\" -exec rm -f {} \;"
-# USB でバイスを表示する
+# USB デバイスを表示する
 alias lsusb='system_profiler SPUSBDataType'
 # PullRequest ブランチに checkout する
 # http://qiita.com/yuku_t/items/f53a9d3ea92614b0927d
