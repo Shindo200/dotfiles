@@ -27,6 +27,13 @@
 [push]
   default = matching
 
+[pull]
+  default = upstream
+  rebase  = true
+
+[rebase]
+  default = master
+
 [pager]
   log  = diff-highlight | less
   show = diff-highlight | less
