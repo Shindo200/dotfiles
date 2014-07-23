@@ -1,17 +1,17 @@
 [user]
-  name = Suguru Odai
+  name  = Suguru Odai
   email = ourqwers@gmail.com
 
 [alias]
   adp = add -p
-  co = checkout
-  cm = commit
-  df = diff
+  co  = checkout
+  cm  = commit
+  df  = diff
   dfh = diff HEAD
-  lg = log --oneline --graph --decorate
+  lg  = log --oneline --graph --decorate
   lga = log --oneline --graph --decorate --all
-  rb = rebase
-  st = status
+  rb  = rebase
+  st  = status
 
 [color]
   ui = true
