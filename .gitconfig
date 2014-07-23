@@ -19,6 +19,11 @@
 [color]
   ui = true
 
+[color "branch"]
+  current = green
+  local   = yellow
+  remote  = cyan
+
 [push]
   default = matching
 
