@@ -8,10 +8,13 @@
   cm  = commit
   df  = diff
   dfh = diff HEAD
-  lg  = log --oneline --graph --decorate
-  lga = log --oneline --graph --decorate --all
+  lg  = log --graph --abbrev-commit --pretty='%C(bold magenta)%h %C(reset)%C(green)[%cr] %C(reset)%s %C(bold green)%an%C(reset)%C(yellow)%d'
+  lga = log --graph --all --pretty='%C(bold magenta)%h %C(reset)%C(green)[%cr] %C(reset)%s %C(bold green)%an%C(reset)%C(yellow)%d'
+  mm  = merge --no-ff
   rb  = rebase
+  ru  = remote update --prune
   st  = status
+  undo = reset --soft HEAD@{1}
 
 [color]
   ui = true
