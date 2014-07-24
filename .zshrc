@@ -94,6 +94,11 @@ alias lsusb='system_profiler SPUSBDataType'
 # PullRequest ブランチに checkout する
 # http://qiita.com/yuku_t/items/f53a9d3ea92614b0927d
 alias prcheckout='prfetch | percol | cut -f2 | xargs git checkout'
+# Chef/knife 関係のエイリアス
+alias k='knife'
+alias ks='knife solo'
+alias kc='knife cookbook'
+alias kn='knife node'
 
 #----------
 # Key bind
