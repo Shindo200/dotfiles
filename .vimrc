@@ -169,9 +169,12 @@ if exists('&ambiwidth')
 endif
 
 "---------------------------------
-" Guardfile 設定
+" Ruby ファイルタイプ設定
 "---------------------------------
+" Guard
 autocmd BufNewFile,BufRead Guardfile set filetype=ruby
+" Berkshelf
+autocmd BufNewFile,BufRead Berksfile set filetype=ruby
 
 "---------------------------------
 " 編集関連
