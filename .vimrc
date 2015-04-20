@@ -169,12 +169,18 @@ if exists('&ambiwidth')
 endif
 
 "---------------------------------
-" Ruby ファイルタイプ設定
+" ファイルタイプ設定
 "---------------------------------
+" Gemfile
+autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 " Guard
 autocmd BufNewFile,BufRead Guardfile set filetype=ruby
 " Berkshelf
 autocmd BufNewFile,BufRead Berksfile set filetype=ruby
+" CoffeeScript
+autocmd BufNewFile,BufRead *.coffee set filetype=coffee
+" Hamlbars
+autocmd BufNewFile,BufRead *.hamlbars set filetype=haml
 
 "---------------------------------
 " 編集関連
@@ -194,7 +200,9 @@ filetype off
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
+  NeoBundleFetch 'Shougo/neobundle.vim'
+  call neobundle#end()
 endif
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc'
@@ -205,6 +213,7 @@ NeoBundle 'basyura/unite-rails'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'jpalardy/vim-slime'
+NeoBundle 'kchmck/vim-coffee-script'
 
 "---------------------------------
 " syntasic.vim

@@ -180,3 +180,5 @@ precmd () {
 PROMPT="%B%(?,%F{083},%F{205})[%n@%m: %.]%f%b %1(v,%B%F{045}%1v%f%b,)
 %B%(!,#,$)%b "
 RPROMPT="%B%F{220}<%*>%f%b"
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

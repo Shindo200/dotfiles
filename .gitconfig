@@ -16,6 +16,9 @@
   st  = status
   undo = reset --soft HEAD@{1}
 
+[core]
+  excludesfile = ~/dotfiles/.gitignore
+
 [color]
   ui = true
 
