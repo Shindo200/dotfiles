@@ -138,6 +138,11 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 #--------
+# direnv
+#--------
+eval "$(direnv hook zsh)"
+
+#--------
 # PHP5.5
 #--------
 export PATH=/usr/local/php5/bin:$PATH
