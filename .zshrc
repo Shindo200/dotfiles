@@ -67,6 +67,12 @@ setopt auto_cd
 setopt auto_param_keys
 setopt auto_param_slash
 
+#--------------------------
+# 単語として認識される文字
+#--------------------------
+# Ctrl+w でパス文字列を/ごとに削除できるようにする
+WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+
 #-------------
 # Disable key
 #-------------
