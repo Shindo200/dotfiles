@@ -141,7 +141,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # rbenv
 #-------
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+eval "$(rbenv init - zsh)"
 
 #--------
 # direnv
