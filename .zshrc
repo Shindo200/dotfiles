@@ -158,6 +158,11 @@ export PATH=/usr/local/php5/bin:$PATH
 #----------
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
+#----------
+# Embulk
+#----------
+export PATH="$HOME/.embulk/bin:$PATH"
+
 #-------------
 # Show branch
 #-------------
