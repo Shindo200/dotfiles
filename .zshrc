@@ -123,6 +123,8 @@ bindkey -e
 #-------
 # Path
 #-------
+# El Capitan用
+export PATH=/usr/local/bin:$PATH
 # アーキテクチュアに依存したデータを置くディレクトリ
 export PATH=/usr/local/share:$PATH
 
