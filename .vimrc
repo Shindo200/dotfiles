@@ -223,6 +223,7 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'mustache/vim-mustache-handlebars'
 
 "---------------------------------
 " syntasic.vim
