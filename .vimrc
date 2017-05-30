@@ -111,9 +111,6 @@ nnoremap  <Up>     <nop>
 nnoremap  <Down>   <nop>
 nnoremap  <Left>   <nop>
 nnoremap  <Right>  <nop>
-" エスケープも同様に理由で無効化
-inoremap  <ESC>    <nop>
-vnoremap  <ESC>    <nop>
 
 "---------------------------------
 " エンコーディング関連
