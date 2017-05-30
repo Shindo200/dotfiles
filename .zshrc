@@ -100,16 +100,14 @@ alias kn='knife node'
 #----------
 # Key bind
 #----------
-# # 概要
-# Vim は素晴らしい.
-# でも、シェルの操作は Emacs のキーバインドのが素敵だった.
-#
-# # コマンドの説明
 # bindkey [option] : キーバインドを設定する
 #         -e       : Emacs
 #         -v       : VIM
 #
 bindkey -e
+
+# Ctrl+R の検索でAND検索できるようにする
+bindkey '^R' history-incremental-pattern-search-backward
 
 #-------
 # Path
