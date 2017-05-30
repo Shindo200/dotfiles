@@ -1,5 +1,0 @@
--f .tags
---append=yes
---recurse=yes
---langmap=RUBY:.rb
---ruby-kinds=cfm
