@@ -8,6 +8,8 @@
   cm  = commit
   df  = diff
   dfh = diff HEAD
+  dt  = difftool
+  dth = difftool HEAD
   lg  = log --graph --abbrev-commit --pretty='%C(bold magenta)%h %C(reset)%C(green)[%cr] %C(reset)%s %C(bold green)%an%C(reset)%C(yellow)%d'
   lga = log --graph --all --pretty='%C(bold magenta)%h %C(reset)%C(green)[%cr] %C(reset)%s %C(bold green)%an%C(reset)%C(yellow)%d'
   mm  = merge --no-ff
@@ -26,6 +28,9 @@
   current = green
   local   = yellow
   remote  = cyan
+
+[diff]
+  tool = vimdiff
 
 [push]
   default = matching
