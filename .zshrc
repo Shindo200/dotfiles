@@ -42,7 +42,7 @@ limit coredumpsize 102400
 # Editor
 #--------
 # デフォルトエディタ
-export EDITOR=/usr/bin/vim
+export EDITOR=/usr/local/bin/vim
 
 #---------------
 # Shell options
@@ -77,29 +77,20 @@ WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 # Disable key
 #-------------
 # r コマンド（履歴実行）を無効化
+# rails コマンドのミスタイプで実行してしまって邪魔になることが多かったため
 disable r
 
-#-----------------------
-# User specific aliases
-#-----------------------
+#------------------------
+# ユーザ定義のエイリアス
+#------------------------
 alias vi='vim'
-alias peco='percol'
 alias g='git'
-alias irb='pry'
+# bundler 関係のエイリアス
 alias be='bundle exec'
 alias bi='bundle install --without production --path vendor/bundle'
 # JAVA で UTF-8 を利用
 alias javac='javac -encoding utf-8'
 alias java='java -Dfile.encoding=utf-8'
-# Node.js で ECMAScript6 の構文(yield とか)を利用
-alias node='node --harmony'
-# 全ディレクトリの .DS_STORE を削除
-alias rmds="find . -name \".DS_Store\" -exec rm -f {} \;"
-# USB デバイスを表示する
-alias lsusb='system_profiler SPUSBDataType'
-# PullRequest ブランチに checkout する
-# http://qiita.com/yuku_t/items/f53a9d3ea92614b0927d
-alias prcheckout='prfetch | percol | cut -f2 | xargs git checkout'
 # Chef/knife 関係のエイリアス
 alias k='knife'
 alias ks='knife solo'
@@ -150,11 +141,6 @@ eval "$(rbenv init - zsh)"
 #--------
 eval "$(direnv hook zsh)"
 
-#--------
-# PHP5.5
-#--------
-export PATH=/usr/local/php5/bin:$PATH
-
 #----------
 # nodebrew
 #----------
@@ -197,6 +183,3 @@ precmd () {
 #
 PROMPT="%B%(?,%F{083},%F{205})[%n@%m: %.]%f%b %1(v,%B%F{045}%1v%f%b,)
 %B%(!,#,$)%b "
-RPROMPT="%B%F{220}<%*>%f%b"
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
