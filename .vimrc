@@ -101,16 +101,19 @@ set incsearch
 " 検索結果をハイライト
 set hlsearch
 "Escの2回押しでハイライト消去
-nmap <silent><ESC><ESC> :nohlsearch<CR><ESC>
+nnoremap <silent><ESC><ESC> :nohlsearch<CR><ESC>
 
 "---------------------------------
 " キーマッピング
 "---------------------------------
-" 「カーソルキーで移動するのはダサい」という酷い話を聞いた
+" カーソルキーに手が触れて、カーソルがあらぬところに移動して辛かったので無効化
 nnoremap  <Up>     <nop>
 nnoremap  <Down>   <nop>
 nnoremap  <Left>   <nop>
 nnoremap  <Right>  <nop>
+" エスケープも同様に理由で無効化
+inoremap  <ESC>    <nop>
+vnoremap  <ESC>    <nop>
 
 "---------------------------------
 " エンコーディング関連
