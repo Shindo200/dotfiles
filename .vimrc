@@ -182,14 +182,10 @@ endif
 "---------------------------------
 " Gemfile
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
-" Guard
-autocmd BufNewFile,BufRead Guardfile set filetype=ruby
 " Berkshelf
 autocmd BufNewFile,BufRead Berksfile set filetype=ruby
 " CoffeeScript
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
-" Hamlbars
-autocmd BufNewFile,BufRead *.hamlbars set filetype=haml
 
 "---------------------------------
 " 編集関連
@@ -197,74 +193,3 @@ autocmd BufNewFile,BufRead *.hamlbars set filetype=haml
 "タブをスペースに変換
 set expandtab
 
-"---------------------------------
-" プラグイン設定
-"---------------------------------
-
-"---------------------------------
-" NeoBundle
-"---------------------------------
-set nocompatible
-filetype off
-
-if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#begin(expand('~/.vim/bundle/'))
-  NeoBundleFetch 'Shougo/neobundle.vim'
-  call neobundle#end()
-endif
-NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/vimproc'
-NeoBundle 'VimClojure'
-NeoBundle 'Shougo/vimshell'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'basyura/unite-rails'
-NeoBundle 'Shougo/neosnippet'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'jpalardy/vim-slime'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'mustache/vim-mustache-handlebars'
-
-"---------------------------------
-" syntasic.vim
-"---------------------------------
-" ruby のファイルを保存したときに rubocop を動かす
-NeoBundle 'scrooloose/syntastic'
-let g:syntastic_mode_map = { 'mode': 'passive',
-            \ 'active_filetypes': ['ruby'] }
-let g:syntastic_ruby_checkers = ['rubocop']
-
-"---------------------------------
-" vim-tags
-"---------------------------------
-" <Ctrl+]> でメソッドジャンプ
-NeoBundle 'szw/vim-tags'
-let g:vim_tags_project_tags_command = "/usr/local/Cellar/ctags/5.8_1/bin/ctags -f .tags -R . 2>/dev/null"
-let g:vim_tags_gems_tags_command = "/usr/local/Cellar/ctags/5.8_1/bin/ctags -R -f Gemfile.lock.tags `bundle show --paths` 2>/dev/null"
-set tags+=.tags,Gemfile.lock.tags
-
-"---------------------------------
-" neocomplcache.vim
-"---------------------------------
-NeoBundle 'Shougo/neocomplcache'
-"let g:neocomplcache_enable_at_startup = 1
-
-"---------------------------------
-" NERDTree.vim
-"---------------------------------
-NeoBundle 'scrooloose/nerdtree'
-" 作業ウィンドウにカーソルを合わせる
-"  autocmd vimenter * if argc() | NERDTree | wincmd p | endif
-" 最後のウィンドウを閉じたときにNERDTreeも閉じる
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-" 隠しファイルを表示するか
-let NERDTreeShowHidden=1
-" 表示しないファイル
-let NERDTreeIgnore=['\.git$', '\.DS_Store', '\~$']
-
-"---------------------------------
-" Plugin After setting
-"---------------------------------
-filetype plugin indent on
-filetype indent on
-syntax on
