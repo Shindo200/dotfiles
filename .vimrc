@@ -10,13 +10,13 @@
 " # コマンド
 " autocmd [group] x filetype [nested] command
 
-
 "---------------------------------
 " カラー設定
 "---------------------------------
+if filereadable(expand("~/.vim/colors/molokai.vim"))
+  colorscheme molokai
+endif
 syntax on
-set t_Co=256
-colorscheme molokai
 
 "---------------------------------
 " 基本設定
@@ -43,7 +43,6 @@ setlocal omnifunc=syntaxcomplete#Complete
 imap <Nul> <C-x><C-o>
 " クリップボードを利用する
 set clipboard+=unnamed
-
 " バックスペースを有効にする
 set backspace=indent,eol,start
 
@@ -193,3 +192,19 @@ autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 "タブをスペースに変換
 set expandtab
 
+"---------------------------------
+" プラグイン（VimPlugを利用）
+"---------------------------------
+if filereadable(expand("~/.vim/autoload/plug.vim"))
+  call plug#begin('~/.vim/plugged')
+
+  Plug 'pangloss/vim-javascript'
+  Plug 'maxmellon/vim-jsx-pretty'
+  Plug 'tyru/caw.vim'
+
+  call plug#end()
+
+  " ### caw.vim ###
+  nmap <Leader>c <Plug>(caw:hatpos:toggle)
+  vmap <Leader>c <Plug>(caw:hatpos:toggle)
+endif

@@ -87,7 +87,7 @@ alias vi='vim'
 alias g='git'
 # bundler 関係のエイリアス
 alias be='bundle exec'
-alias bi='bundle install --without production --path vendor/bundle'
+alias bi='bundle install --without production'
 # JAVA で UTF-8 を利用
 alias javac='javac -encoding utf-8'
 alias java='java -Dfile.encoding=utf-8'
@@ -96,6 +96,8 @@ alias k='knife'
 alias ks='knife solo'
 alias kc='knife cookbook'
 alias kn='knife node'
+# Docker 関係のエイリアス
+alias dco='docker-compose'
 
 #----------
 # Key bind
@@ -148,6 +150,19 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 # Embulk
 #----------
 export PATH="$HOME/.embulk/bin:$PATH"
+
+#----------
+# Disable Spring
+#----------
+export DISABLE_SPRING=1
+
+#---------
+# pyenv
+#---------
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 #-------------
 # Show branch
